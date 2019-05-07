@@ -1,0 +1,831 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>deepjs documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">deepjs documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li>TrainerServiceImpl</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/shared/services/trainer/trainer.service.ts</code>
+        </p>
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#callbacks">callbacks</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#currentTraining">currentTraining</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#currentTrainings$">currentTrainings$</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#trainer$">trainer$</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getCurrentTrainings$">getCurrentTrainings$</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getTrainer$">getTrainer$</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#setTraining">setTraining</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#setTrainings$">setTrainings$</a>
+                            </li>
+                            <li>
+                                <a href="#train">train</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor()</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="76" class="link-to-prism">src/app/shared/services/trainer/trainer.service.ts:76</a></div>
+                            </td>
+                        </tr>
+
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getCurrentTrainings$"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            getCurrentTrainings$
+                        </b>
+                        <a href="#getCurrentTrainings$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getCurrentTrainings$()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="92"
+                            class="link-to-prism">src/app/shared/services/trainer/trainer.service.ts:92</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Training.html" target="_self" >Observable&lt;Training&gt;</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getTrainer$"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            getTrainer$
+                        </b>
+                        <a href="#getTrainer$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getTrainer$()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="89"
+                            class="link-to-prism">src/app/shared/services/trainer/trainer.service.ts:89</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/TrainData.html" target="_self" >Observable&lt;TrainData&gt;</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setTraining"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            setTraining
+                        </b>
+                        <a href="#setTraining"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>setTraining(training: <a href="../interfaces/Training.html">Training</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="86"
+                            class="link-to-prism">src/app/shared/services/trainer/trainer.service.ts:86</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>training</td>
+                                    <td>
+                                                <code><a href="../interfaces/Training.html" target="_self" >Training</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setTrainings$"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            setTrainings$
+                        </b>
+                        <a href="#setTrainings$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>setTrainings$(trainings$: <a href="../interfaces/Training.html">Observable<Training></a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="100"
+                            class="link-to-prism">src/app/shared/services/trainer/trainer.service.ts:100</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>trainings$</td>
+                                    <td>
+                                                <code><a href="../interfaces/Training.html" target="_self" >Observable&lt;Training&gt;</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="train"></a>
+                    <span class="name">
+                        <b>
+                            train
+                        </b>
+                        <a href="#train"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>train(training: <a href="../interfaces/Training.html">Training</a>, observer: <a href="../interfaces/TrainData.html">Observer<TrainData></a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="137"
+                            class="link-to-prism">src/app/shared/services/trainer/trainer.service.ts:137</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>training</td>
+                                    <td>
+                                                <code><a href="../interfaces/Training.html" target="_self" >Training</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>observer</td>
+                                    <td>
+                                                <code><a href="../interfaces/TrainData.html" target="_self" >Observer&lt;TrainData&gt;</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="callbacks"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            callbacks</b>
+                            <a href="#callbacks"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>tf.CustomCallbackArgs</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="76" class="link-to-prism">src/app/shared/services/trainer/trainer.service.ts:76</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="currentTraining"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            currentTraining</b>
+                            <a href="#currentTraining"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/Training.html" target="_self" >Training</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="74" class="link-to-prism">src/app/shared/services/trainer/trainer.service.ts:74</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="currentTrainings$"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            currentTrainings$</b>
+                            <a href="#currentTrainings$"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/Training.html" target="_self" >Subject&lt;Training&gt;</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="73" class="link-to-prism">src/app/shared/services/trainer/trainer.service.ts:73</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="trainer$"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            trainer$</b>
+                            <a href="#trainer$"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/TrainData.html" target="_self" >Subject&lt;TrainData&gt;</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="75" class="link-to-prism">src/app/shared/services/trainer/trainer.service.ts:75</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+import * as tf from &#x27;@tensorflow/tfjs&#x27;;
+import {ReplaySubject, Subject, ConnectableObservable, Observable, Observer} from &#x27;rxjs&#x27;
+import {publish, publishReplay, shareReplay, map, share, switchMap} from &#x27;rxjs/operators&#x27;
+import {Training} from &#x27;@api/core&#x27;;
+
+
+
+// Codes the type of event emitted to the visualisations
+export enum TrainEvent {
+  TrainBegin,
+  TrainEnd,
+  EpochBegin,
+  EpochEnd,
+  BatchBegin,
+  BatchEnd
+}
+
+// Encapsulates data emitted during Training
+export interface TrainData{
+
+  getEpoch():number;
+  getBatch():number;
+  getEvent():TrainEvent;
+  getLoss():number;
+  
+}
+
+export class TrainData0 {
+  private epoch:number;
+  private batch:number;
+  private event:TrainEvent;
+  private loss:number;
+
+  constructor(ev:TrainEvent, ep:number, b:number, l:number){
+    this.event &#x3D; ev;
+    this.epoch &#x3D; ep;
+    this.batch &#x3D; b;
+    this.loss &#x3D; l;
+  }
+
+  getEpoch():number{ return this.epoch};
+  getBatch():number{ return this.batch };
+  getEvent():TrainEvent{ return this.event };
+  getLoss():number{ return this.loss };
+
+}
+
+
+/* We cannot inject an interface
+ * we can inject an abstract class
+ */
+@Injectable({
+  providedIn: &#x27;root&#x27;
+})
+export abstract class TrainerService {
+  abstract setTrainings$(t:Observable&lt;Training&gt;);
+  abstract train(t:Training, observer:Observer&lt;TrainData&gt;);
+  abstract getTrainer$():Observable&lt;TrainData&gt;;
+  abstract getCurrentTrainings$():Observable&lt;Training&gt;;
+}
+
+/* Service used to train a model with particular inputs and parameters
+ * Is accessible from any class with Dependency Injection
+ * Provides an Observable on the current Training and training events
+ * Visualisations can subscribe to these Observables to retrieve their data
+ */
+@Injectable({
+  providedIn: &#x27;root&#x27;
+})
+export class TrainerServiceImpl implements TrainerService {
+
+  private currentTrainings$: Subject&lt;Training&gt;;
+  private currentTraining: Training;
+  private trainer$: Subject&lt;TrainData&gt;;
+  private callbacks: tf.CustomCallbackArgs;
+
+
+  constructor() {
+    this.currentTrainings$ &#x3D; new ReplaySubject&lt;Training&gt;(null);
+    this.trainer$ &#x3D; new Subject&lt;TrainData&gt;();
+
+  }
+
+  // 
+  private setTraining(training:Training){ this.currentTraining &#x3D; training};
+
+  // get an observable on the data emitted by the current training
+  public getTrainer$():Observable&lt;TrainData&gt; { return this.trainer$; }
+
+  // get an observable on the current training
+  public getCurrentTrainings$():Observable&lt;Training&gt; { return this.currentTrainings$; }
+
+
+  /* Set the Observable that will provide a new Training
+   * each time the Train button is pressed.
+   * From that Observable, make a new one that will emit
+   * TrainData while the model is training
+   */
+  public setTrainings$( trainings$:Observable&lt;Training&gt;){
+    //this.currentTrainings$ &#x3D; trainings$;
+    
+    /* switchMap allows to create a new Observer of TrainData
+     * for each Training coming from the training$ Observer
+     * 
+     * share is used to share the data between multiple Observer
+     * otherwise a train would be called each time a subscription is done
+     */
+    console.log(trainings$);
+    const a$:Subject&lt;Training&gt; &#x3D; trainings$ as Subject&lt;Training&gt;;
+
+    trainings$.pipe( switchMap((training) &#x3D;&gt;
+            Observable.create(observer &#x3D;&gt; {
+              this.setTraining(training);
+              this.train(training, observer);
+            })
+          )).subscribe(this.trainer$ as Subject&lt;any&gt;);
+    trainings$.subscribe(this.currentTrainings$ as Subject&lt;Training&gt;);
+    /*
+    this.trainer$ &#x3D; new Subject&lt;TrainData&gt;();
+    
+    const obs$ &#x3D; trainings$.pipe( switchMap((training) &#x3D;&gt;
+      Observable.create(observer &#x3D;&gt; {
+        this.setTraining(training);
+        this.train(training, observer);
+      })//.pipe(share())
+    ));
+    obs$.subscribe(this.trainer$ as Subject&lt;TrainData&gt;);*/
+  }
+
+
+  /* Perform the actual training
+   * calls fit on current Training object
+   * calls next on the observers of the trainer$ Observable
+   * each time a new event is emitted (end of an epoch etc)
+   */
+  train(training:Training, observer:Observer&lt;TrainData&gt;){
+    let x &#x3D; training.getInputs().getXTensor();
+    let y &#x3D; training.getInputs().getYTensor();
+    let m &#x3D; training.getModel() as tf.Sequential;
+      let c &#x3D; training.getConfig() as tf.ModelFitArgs;
+
+    /* These callbacks are called at specific events in the training
+     * by fit
+     */
+    c.callbacks &#x3D; {
+      onTrainBegin: () &#x3D;&gt; {
+        // TODO
+        // factory for making TrainData
+        observer.next(new TrainData0(TrainEvent.TrainBegin, 0, 0, 0));
+      },
+      onTrainEnd: (epoch, logs) &#x3D;&gt; {
+        observer.next(new TrainData0(TrainEvent.TrainEnd, epoch, 0, 0));
+      },
+      onEpochBegin: async (epoch, logs) &#x3D;&gt; {
+        observer.next(new TrainData0(TrainEvent.EpochBegin, epoch, logs.batch, logs.loss));
+      },
+      onEpochEnd: async (epoch, logs) &#x3D;&gt; {
+        observer.next(new TrainData0(TrainEvent.EpochEnd, epoch, logs.batch, logs.loss));
+      },
+      onBatchBegin: async (epoch, logs) &#x3D;&gt; {
+        observer.next(new TrainData0(TrainEvent.BatchBegin, epoch, logs.batch, logs.loss));
+      },
+      onBatchEnd: async (epoch, logs) &#x3D;&gt; {
+        observer.next(new TrainData0(TrainEvent.BatchEnd, epoch, logs.batch, logs.loss));
+      }
+
+    } as tf.CustomCallbackArgs;
+
+    // Perform training
+    m.fit(x, y, c);
+
+  }
+
+}
+
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'TrainerServiceImpl.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

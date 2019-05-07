@@ -1,0 +1,1023 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>deepjs documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">deepjs documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>TensorspaceVisualizationComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/demo/visualization/visualization-model/tensorspace-visualization/tensorspace-visualization.component.ts</code>
+</p>
+
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>Quick implementation of a textual model visualization
+using tf.LayersModel.summarize</p>
+
+    </p>
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/AfterViewInit" target="_blank" >AfterViewInit</a></code>
+                    <code><a href="../interfaces/VisualizationModelComponent.html" target="_self" >VisualizationModelComponent</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-tensorspace-visualization</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./tensorspace-visualization.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./tensorspace-visualization.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#data">data</a>
+                            </li>
+                            <li>
+                                <a href="#modelTrainer">modelTrainer</a>
+                            </li>
+                            <li>
+                                <a href="#presenter">presenter</a>
+                            </li>
+                            <li>
+                                <a href="#tensorspaceContainer">tensorspaceContainer</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#tspModel">tspModel</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#updatePeriod">updatePeriod</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#convert">convert</a>
+                            </li>
+                            <li>
+                                <a href="#convertLayer">convertLayer</a>
+                            </li>
+                            <li>
+                                <a href="#ngAfterViewInit">ngAfterViewInit</a>
+                            </li>
+                            <li>
+                                <a href="#preprocess">preprocess</a>
+                            </li>
+                            <li>
+                                <a href="#render">render</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(modelTrainer: <a href="../injectables/TrainerServiceImpl.html">TrainerServiceImpl</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/demo/visualization/visualization-model/tensorspace-visualization/tensorspace-visualization.component.ts:26</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>modelTrainer</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TrainerServiceImpl.html" target="_self" >TrainerServiceImpl</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="convert"></a>
+                    <span class="name">
+                        <b>
+                            convert
+                        </b>
+                        <a href="#convert"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>convert(m: tf.LayersModel)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="98"
+                            class="link-to-prism">src/app/demo/visualization/visualization-model/tensorspace-visualization/tensorspace-visualization.component.ts:98</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>m</td>
+                                    <td>
+                                            <code>tf.LayersModel</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>TSP.Model</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="convertLayer"></a>
+                    <span class="name">
+                        <b>
+                            convertLayer
+                        </b>
+                        <a href="#convertLayer"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>convertLayer(l: tf.layers.Layer)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="67"
+                            class="link-to-prism">src/app/demo/visualization/visualization-model/tensorspace-visualization/tensorspace-visualization.component.ts:67</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>l</td>
+                                    <td>
+                                            <code>tf.layers.Layer</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>TSP.Layer</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngAfterViewInit"></a>
+                    <span class="name">
+                        <b>
+                            ngAfterViewInit
+                        </b>
+                        <a href="#ngAfterViewInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngAfterViewInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="133"
+                            class="link-to-prism">src/app/demo/visualization/visualization-model/tensorspace-visualization/tensorspace-visualization.component.ts:133</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="preprocess"></a>
+                    <span class="name">
+                        <b>
+                            preprocess
+                        </b>
+                        <a href="#preprocess"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>preprocess(model: tf.LayersModel)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="110"
+                            class="link-to-prism">src/app/demo/visualization/visualization-model/tensorspace-visualization/tensorspace-visualization.component.ts:110</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>model</td>
+                                    <td>
+                                            <code>tf.LayersModel</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>tf.LayersModel</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="render"></a>
+                    <span class="name">
+                        <b>
+                            render
+                        </b>
+                        <a href="#render"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>render(m: tf.LayersModel)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="38"
+                            class="link-to-prism">src/app/demo/visualization/visualization-model/tensorspace-visualization/tensorspace-visualization.component.ts:38</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>m</td>
+                                    <td>
+                                            <code>tf.LayersModel</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="data"></a>
+                        <span class="name">
+                            <b>
+                            data</b>
+                            <a href="#data"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.019607843831181526,0.027450980618596077,0.027450980618596077,0.027450980618596077,0.40784314274787903,0.5098039507865906,0.5098039507865906,0.6901960968971252,1,0.7960784435272217,0.5098039507865906,0.0470588244497776,0.003921568859368563,0,0,0,0,0,0,0,0,0,0,0.003921568859368563,0.09803921729326248,0.5333333611488342,0.5333333611488342,0.5333333611488342,0.8509804010391235,0.9921568632125854,0.9921568632125854,0.9921568632125854,0.9921568632125854,0.9921568632125854,0.9921568632125854,0.9764705896377563,0.9450980424880981,0.9450980424880981,0.4941176474094391,0.4588235318660736,0.0117647061124444,0,0,0,0,0,0,0,0,0,0,0.07058823853731155,0.9647058844566345,0.9921568632125854,0.9921568632125854,0.9921568632125854,0.9411764740943909,0.9215686321258545,0.9215686321258545,0.5490196347236633,0.8156862854957581,0.9215686321258545,0.5137255191802979,0.27843138575553894,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.007843137718737125,0.38823530077934265,0.9921568632125854,0.6196078658103943,0.4117647111415863,0.12941177189350128,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.13333334028720856,0.9921568632125854,0.9921568632125854,0.364705890417099,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.10588235408067703,0.8352941274642944,0.9921568632125854,0.6039215922355652,0.13333334028720856,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.5333333611488342,0.9921568632125854,0.9921568632125854,0.4901960790157318,0.1725490242242813,0.1725490242242813,0.13725490868091583,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.4431372582912445,0.9921568632125854,0.9921568632125854,0.9921568632125854,0.9921568632125854,0.9921568632125854,0.9333333373069763,0.572549045085907,0.14901961386203766,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.01568627543747425,0.5607843399047852,0.9019607901573181,0.9647058844566345,0.8078431487083435,0.9921568632125854,0.9921568632125854,0.9921568632125854,0.9215686321258545,0.33725491166114807,0.05098039284348488,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1568627506494522,0.23137255012989044,0.03921568766236305,0.2666666805744171,0.2666666805744171,0.6627451181411743,0.9921568632125854,0.9921568632125854,0.6431372761726379,0.0470588244497776,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.054901961237192154,0.3607843220233917,0.929411768913269,0.9921568632125854,0.6431372761726379,0.0470588244497776,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.5333333611488342,0.929411768913269,0.9921568632125854,0.30980393290519714,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.38823530077934265,0.9921568632125854,0.929411768913269,0.2705882489681244,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.19607843458652496,0.929411768913269,0.9921568632125854,0.6274510025978088,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.38823530077934265,0.9921568632125854,0.9411764740943909,0.10196078568696976,0,0,0,0,0,0,0,0,0,0,0,0,0.0117647061124444,0.6509804129600525,0.8117647171020508,0,0,0,0,0,0,0,0,0,0.3176470696926117,0.9921568632125854,0.9921568632125854,0.11764705926179886,0,0,0,0,0,0,0,0,0,0,0,0,0.027450980618596077,0.9921568632125854,0.9490196108818054,0.4156862795352936,0.4156862795352936,0.35686275362968445,0,0,0,0,0,0,0.3176470696926117,0.9921568632125854,0.9921568632125854,0.11764705926179886,0,0,0,0,0,0,0,0,0,0,0,0,0.01568627543747425,0.7921568751335144,0.9921568632125854,0.9921568632125854,0.9921568632125854,0.9843137264251709,0.9254902005195618,0.9254902005195618,0.9254902005195618,0.9254902005195618,0.9254902005195618,0.9254902005195618,0.9450980424880981,0.9921568632125854,0.6509804129600525,0.0117647061124444,0,0,0,0,0,0,0,0,0,0,0,0,0,0.05098039284348488,0.5647059082984924,0.9921568632125854,0.9921568632125854,0.9921568632125854,0.9921568632125854,0.9921568632125854,0.9921568632125854,0.9921568632125854,0.9921568632125854,0.9921568632125854,0.9921568632125854,0.9921568632125854,0.40392157435417175,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.003921568859368563,0.019607843831181526,0.019607843831181526,0.3333333432674408,0.5058823823928833,0.6000000238418579,0.9921568632125854,0.9921568632125854,0.9921568632125854,0.8509804010391235,0.5058823823928833,0.34117648005485535,0.003921568859368563,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/demo/visualization/visualization-model/tensorspace-visualization/tensorspace-visualization.component.ts:35</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="modelTrainer"></a>
+                        <span class="name">
+                            <b>
+                            modelTrainer</b>
+                            <a href="#modelTrainer"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../injectables/TrainerServiceImpl.html" target="_self" >TrainerServiceImpl</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/demo/visualization/visualization-model/tensorspace-visualization/tensorspace-visualization.component.ts:24</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="presenter"></a>
+                        <span class="name">
+                            <b>
+                            presenter</b>
+                            <a href="#presenter"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/VisualizationModelPresenter.html" target="_self" >VisualizationModelPresenter</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/demo/visualization/visualization-model/tensorspace-visualization/tensorspace-visualization.component.ts:22</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="tensorspaceContainer"></a>
+                        <span class="name">
+                            <b>
+                            tensorspaceContainer</b>
+                            <a href="#tensorspaceContainer"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/core/ElementRef" target="_blank" >ElementRef</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(&#x27;tensorspace&#x27;)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/demo/visualization/visualization-model/tensorspace-visualization/tensorspace-visualization.component.ts:23</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="tspModel"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            tspModel</b>
+                            <a href="#tspModel"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>TSP.Model</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/demo/visualization/visualization-model/tensorspace-visualization/tensorspace-visualization.component.ts:25</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="updatePeriod"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            updatePeriod</b>
+                            <a href="#updatePeriod"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>2</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/demo/visualization/visualization-model/tensorspace-visualization/tensorspace-visualization.component.ts:26</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { ElementRef, ViewChild, Component, AfterViewInit} from &#x27;@angular/core&#x27;;
+import { filter, map } from &#x27;rxjs/operators&#x27;
+import { TrainerServiceImpl, TrainerService } from &#x27;../../../../shared/services/trainer/trainer.service&#x27;;
+import {VisualizationModelPresenter, VisualizationModelComponent} from &#x27;@api/core&#x27;;
+import { TensorspaceVisualizationPresenter } from &#x27;./tensorspace-visualization.presenter&#x27;;
+import * as TSP from &#x27;tensorspace&#x27;;
+import * as tf from &#x27;@tensorflow/tfjs&#x27;;
+
+
+/**
+ * Quick implementation of a textual model visualization
+ * using tf.LayersModel.summarize
+ */
+@Component({
+  selector: &#x27;app-tensorspace-visualization&#x27;,
+  templateUrl: &#x27;./tensorspace-visualization.component.html&#x27;,
+  styleUrls: [&#x27;./tensorspace-visualization.component.css&#x27;]
+
+})
+export class TensorspaceVisualizationComponent implements AfterViewInit, VisualizationModelComponent {
+
+  presenter: VisualizationModelPresenter;
+  @ViewChild(&#x27;tensorspace&#x27;) tensorspaceContainer:ElementRef; 
+  modelTrainer: TrainerServiceImpl;
+  private tspModel:TSP.Model;
+  private updatePeriod:number &#x3D; 2;
+
+  constructor(modelTrainer: TrainerServiceImpl) {
+    this.presenter &#x3D; new TensorspaceVisualizationPresenter(modelTrainer);
+    this.modelTrainer &#x3D; modelTrainer;
+
+
+  }
+
+  data &#x3D; [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.019607843831181526,0.027450980618596077,0.027450980618596077,0.027450980618596077,0.40784314274787903,0.5098039507865906,0.5098039507865906,0.6901960968971252,1,0.7960784435272217,0.5098039507865906,0.0470588244497776,0.003921568859368563,0,0,0,0,0,0,0,0,0,0,0.003921568859368563,0.09803921729326248,0.5333333611488342,0.5333333611488342,0.5333333611488342,0.8509804010391235,0.9921568632125854,0.9921568632125854,0.9921568632125854,0.9921568632125854,0.9921568632125854,0.9921568632125854,0.9764705896377563,0.9450980424880981,0.9450980424880981,0.4941176474094391,0.4588235318660736,0.0117647061124444,0,0,0,0,0,0,0,0,0,0,0.07058823853731155,0.9647058844566345,0.9921568632125854,0.9921568632125854,0.9921568632125854,0.9411764740943909,0.9215686321258545,0.9215686321258545,0.5490196347236633,0.8156862854957581,0.9215686321258545,0.5137255191802979,0.27843138575553894,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.007843137718737125,0.38823530077934265,0.9921568632125854,0.6196078658103943,0.4117647111415863,0.12941177189350128,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.13333334028720856,0.9921568632125854,0.9921568632125854,0.364705890417099,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.10588235408067703,0.8352941274642944,0.9921568632125854,0.6039215922355652,0.13333334028720856,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.5333333611488342,0.9921568632125854,0.9921568632125854,0.4901960790157318,0.1725490242242813,0.1725490242242813,0.13725490868091583,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.4431372582912445,0.9921568632125854,0.9921568632125854,0.9921568632125854,0.9921568632125854,0.9921568632125854,0.9333333373069763,0.572549045085907,0.14901961386203766,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.01568627543747425,0.5607843399047852,0.9019607901573181,0.9647058844566345,0.8078431487083435,0.9921568632125854,0.9921568632125854,0.9921568632125854,0.9215686321258545,0.33725491166114807,0.05098039284348488,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1568627506494522,0.23137255012989044,0.03921568766236305,0.2666666805744171,0.2666666805744171,0.6627451181411743,0.9921568632125854,0.9921568632125854,0.6431372761726379,0.0470588244497776,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.054901961237192154,0.3607843220233917,0.929411768913269,0.9921568632125854,0.6431372761726379,0.0470588244497776,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.5333333611488342,0.929411768913269,0.9921568632125854,0.30980393290519714,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.38823530077934265,0.9921568632125854,0.929411768913269,0.2705882489681244,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.19607843458652496,0.929411768913269,0.9921568632125854,0.6274510025978088,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.38823530077934265,0.9921568632125854,0.9411764740943909,0.10196078568696976,0,0,0,0,0,0,0,0,0,0,0,0,0.0117647061124444,0.6509804129600525,0.8117647171020508,0,0,0,0,0,0,0,0,0,0.3176470696926117,0.9921568632125854,0.9921568632125854,0.11764705926179886,0,0,0,0,0,0,0,0,0,0,0,0,0.027450980618596077,0.9921568632125854,0.9490196108818054,0.4156862795352936,0.4156862795352936,0.35686275362968445,0,0,0,0,0,0,0.3176470696926117,0.9921568632125854,0.9921568632125854,0.11764705926179886,0,0,0,0,0,0,0,0,0,0,0,0,0.01568627543747425,0.7921568751335144,0.9921568632125854,0.9921568632125854,0.9921568632125854,0.9843137264251709,0.9254902005195618,0.9254902005195618,0.9254902005195618,0.9254902005195618,0.9254902005195618,0.9254902005195618,0.9450980424880981,0.9921568632125854,0.6509804129600525,0.0117647061124444,0,0,0,0,0,0,0,0,0,0,0,0,0,0.05098039284348488,0.5647059082984924,0.9921568632125854,0.9921568632125854,0.9921568632125854,0.9921568632125854,0.9921568632125854,0.9921568632125854,0.9921568632125854,0.9921568632125854,0.9921568632125854,0.9921568632125854,0.9921568632125854,0.40392157435417175,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.003921568859368563,0.019607843831181526,0.019607843831181526,0.3333333432674408,0.5058823823928833,0.6000000238418579,0.9921568632125854,0.9921568632125854,0.9921568632125854,0.8509804010391235,0.5058823823928833,0.34117648005485535,0.003921568859368563,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+
+
+  render(m:tf.LayersModel){
+    var init &#x3D; this.tspModel &#x3D;&#x3D;&#x3D; undefined;
+
+    this.tspModel &#x3D; this.convert(m);
+
+    const prepocessedModel:tf.LayersModel &#x3D; this.preprocess(m);
+
+
+    this.tspModel.load({
+      type: &#x27;live&#x27;,
+      modelHandler: prepocessedModel,
+      outputsName: m.layers.map((l) &#x3D;&gt; l.name),
+      onComplete: function(){
+        console.log(&quot;loaded model into tensorspace&quot;);
+      }
+    });
+
+
+    if(init){
+      // Load data
+      this.tspModel.init(() &#x3D;&gt; {
+        this.modelTrainer.getTrainer$().pipe(
+          filter((t) &#x3D;&gt; t.getEpoch() % this.updatePeriod &#x3D;&#x3D; 0))
+          .subscribe(() &#x3D;&gt; this.tspModel.predict(this.data));
+      });
+    }
+
+  } 
+
+  convertLayer(l:tf.layers.Layer): TSP.Layer {
+    const layerType:string &#x3D; l.name.split(&quot;_&quot;)[0];
+    var tspLayer:TSP.Layer;
+    switch(layerType){
+      case &#x27;conv2d&#x27;:
+        tspLayer &#x3D; new TSP.layers.Conv2d();
+        break;
+      case &#x27;max&#x27;:
+        tspLayer &#x3D; new TSP.layers.Pooling2d();
+        break;
+      case &#x27;flatten&#x27;:
+        tspLayer &#x3D; new TSP.layers.Flatten();
+        break;
+      case &#x27;dense&#x27;:
+        tspLayer &#x3D; new TSP.layers.Dense();
+        break;
+      case &#x27;conv2d&#x27;:
+        tspLayer &#x3D; new TSP.layers.Conv2d();
+        break;
+      case &#x27;conv2d&#x27;:
+        tspLayer &#x3D; new TSP.layers.Conv2d();
+        break;
+      case &#x27;conv2d&#x27;:
+        tspLayer &#x3D; new TSP.layers.Conv2d();
+        break;
+
+    }
+    return tspLayer;
+
+  }
+
+  convert(m:tf.LayersModel):TSP.Model {
+
+    const tspModel &#x3D; new TSP.models.Sequential(this.tensorspaceContainer.nativeElement);
+
+    var inputShape &#x3D; m.layers[0].batchInputShape.slice(1);
+    tspModel.add(new TSP.layers.GreyscaleInput({ shape: inputShape }));
+    for(var i &#x3D; 0; i&lt;m.layers.length; i++){
+      tspModel.add(this.convertLayer(m.layers[i]));
+    }
+    return tspModel
+  }
+
+  preprocess(model:tf.LayersModel):tf.LayersModel{
+    /*var inputShape &#x3D; model.inputs[0].sourceLayer.batchInputShape.slice(1);
+    const a &#x3D; tf.layers.inputLayer({inputShape: inputShape});
+    const b &#x3D; tf.sequential();
+    b.add(a);
+    for ( const c of model.layers){
+      b.add(c);
+    }
+    var outputList &#x3D; [];
+    for ( let i &#x3D; 0; i &lt; b.layers.length; i ++ ) {
+      outputList.push( b.layers[i].output );
+    }
+    console.log(b.inputs);
+    return tf.model({inputs: b.inputs, outputs: outputList});*/
+    var outputList &#x3D; [];
+    for ( let i &#x3D; 0; i &lt; model.layers.length; i ++ ) {
+      outputList.push( model.layers[i].output );
+    }
+    console.log(model);
+    return tf.model({inputs: model.inputs, outputs: outputList});
+
+  }
+
+  ngAfterViewInit() {
+
+    this.modelTrainer.getCurrentTrainings$().subscribe( (t) &#x3D;&gt; this.render(t.getModel()));
+
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div id&#x3D;&quot;tensorspaceContainer&quot; #tensorspace&gt;&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./tensorspace-visualization.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">#tensorspaceContainer {
+  width: 100%;
+  height: 700px;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div id="tensorspaceContainer" #tensorspace></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'DemoComponentImpl', 'selector': 'app-demo'},{'name': 'EpochVisualizationComponent', 'selector': 'app-epoch-visualisation'},{'name': 'ImageInputComponentImpl', 'selector': 'app-image-input'},{'name': 'InputContainerComponentImpl', 'selector': 'app-input-container'},{'name': 'JsonInputComponentImpl', 'selector': 'app-json-input'},{'name': 'JSONModelComponentImpl', 'selector': 'app-json-model'},{'name': 'LossChartVisualizationComponent', 'selector': 'app-loss-chart-visualisation'},{'name': 'LossVisualizationComponent', 'selector': 'app-loss-visualisation'},{'name': 'ModelContainerComponentImpl', 'selector': 'app-model-container'},{'name': 'ModifParamModelComponentImpl', 'selector': 'app-modif-param-model'},{'name': 'TensorspaceVisualizationComponent', 'selector': 'app-tensorspace-visualization'},{'name': 'TextVisualizationModelComponent', 'selector': 'app-text-model-visualization'},{'name': 'TSModelComponentImpl', 'selector': 'app-ts-model'},{'name': 'VisualizationContainerComponentImpl', 'selector': 'app-visualization-container'},{'name': 'VisualizationInferenceImageComponentImpl', 'selector': 'app-visualization-inference-image'},{'name': 'VisualizationInferenceJSONComponentImpl', 'selector': 'app-visualization-inference-json'},{'name': 'VisualizationItemComponentImpl', 'selector': 'app-visualization-item'}];
+    var DIRECTIVES = [{'name': 'ImageDrawableDirective', 'selector': '[image-drawable]'},{'name': 'InjectComponentDirective', 'selector': '[inject-component]'}];
+    var ACTUAL_COMPONENT = {'name': 'TensorspaceVisualizationComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'TensorspaceVisualizationComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
